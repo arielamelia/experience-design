@@ -3,7 +3,12 @@
   "private": true,
   "dependencies": {
     "jquery": "~2.1.1",
-    "modernizr": "~2.8.1"
+    "modernizr": "~2.8.1",
+    "pixi.js": "pixi#^4.4.4",
+    "hover": "^2.1.1",
+    "textillate": "^0.4.0",
+    "paper-audio-player": "^1.1.1",
+    "scrollstory": "^0.3.7"
   },
   "devDependencies": {
     "chai": "^3.5.0",
