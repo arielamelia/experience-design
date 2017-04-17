@@ -1,18 +1,18 @@
 $(function() {
 
     $('.scrollspy').scrollSpy();
-    $( "#draggable, #draggable-nonvalid" ).draggable();
-    $( "#droppable" ).droppable({
-      accept: "#draggable",
+    $( '#draggable, #draggable-nonvalid' ).draggable();
+    $( '#droppable' ).droppable({
+      accept: '#draggable',
       classes: {
-        "ui-droppable-active": "ui-state-active",
-        "ui-droppable-hover": "ui-state-hover"
+        'ui-droppable-active': 'ui-state-active',
+        'ui-droppable-hover': 'ui-state-hover'
       },
       drop: function( event, ui ) {
         $( this )
-          .addClass( "ui-state-highlight" )
-          .find( "p" )
-            .html( "Dropped!" );
+          .addClass( 'ui-state-highlight' )
+          .find( 'p' )
+            .html( 'Dropped!' );
       }
     });
     document.addEventListener('DOMContentLoaded', function(){
