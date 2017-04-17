@@ -9,7 +9,9 @@
     "textillate": "^0.4.0",
     "paper-audio-player": "^1.1.1",
     "scrollstory": "^0.3.7",
-    "webcomponentsjs": "^0.7.24"
+    "webcomponentsjs": "^0.7.24",
+    "jquery-ui": "^1.12.1",
+    "materialize": "^0.98.2"
   },
   "devDependencies": {
     "chai": "^3.5.0",

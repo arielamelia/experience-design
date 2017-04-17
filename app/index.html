@@ -1,31 +1,36 @@
 <!doctype html>
 <html class="no-js" lang="">
-  <head>
-    <meta charset="utf-8">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Peter Rabbit</title>
-    <link rel="import" href="bower_components/paper-audio-player/paper-audio-player.html">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <!-- Place favicon.ico in the root directory -->
 
-    <!-- build:css styles/vendor.css -->
-    <!-- bower:css -->
-    <link rel="stylesheet" href="/bower_components/hover/css/hover.css" />
-    <link rel="stylesheet" href="/bower_components/animate.css/animate.css" />
-    <!-- endbower -->
-    <!-- endbuild -->
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Peter Rabbit</title>
+  <link rel="import" href="bower_components/paper-audio-player/paper-audio-player.html">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Place favicon.ico in the root directory -->
 
-    <!-- build:css styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
-    <!-- endbuild -->
+  <!-- build:css styles/vendor.css -->
+  <!-- bower:css -->
+  <link rel="stylesheet" href="/bower_components/hover/css/hover.css" />
+  <link rel="stylesheet" href="/bower_components/animate.css/animate.css" />
+  <link rel="stylesheet" href="/bower_components/materialize/bin/materialize.css" />
+  <!-- endbower -->
+  <!-- endbuild -->
 
-    <!-- build:js scripts/vendor/modernizr.js -->
-    <script src="/bower_components/modernizr/modernizr.js"></script>
-    <!-- endbuild -->
-  </head>
-  <body>
-    <!--[if IE]>
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+
+  <!-- build:js scripts/vendor/modernizr.js -->
+  <script src="/bower_components/modernizr/modernizr.js"></script>
+  <!-- endbuild -->
+  <script src="https://use.fontawesome.com/88b6ece815.js"></script>
+
+</head>
+
+<body>
+  <!--[if IE]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
@@ -38,33 +43,89 @@
         <li>jQuery</li>
       </ul>
     </div>-->
+<div id="history" class="section scrollspy">
+<iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1zimNY7DAkmWOS_4A-6Dwhs1fpAfKN8i0zyizkoiU_xQ&font=Default&lang=en&start_at_end=true&debug=true&hash_bookmark=true&initial_zoom=5&height=650' width='100%' height='750' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
+</div>
+<div id="story" class="section scrollspy">
+  <paper-audio-player src="audio/PeterRabbit.mp3" title="The Story of Peter Rabbit by Beatrix Potter read by Phil Chenevert" color="#F05C38"></paper-audio-player>
 
-    <paper-audio-player src="audio/PeterRabbit.mp3" title="The Story of Peter Rabbit by Beatrix Potter read by Phil Chenevert" color="#F05C38"></paper-audio-player>
+  <div class="container">
+    <div class="story" id="story1"></div>
+    <div class="story" id="story2"></div>
+    <body>
 
-    <div class="element"></div>
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='https://www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-XXXXX-X');ga('send','pageview');
-    </script>
+    <div id="draggable-nonvalid" class="ui-widget-content">
+      <img src="images/purple_beet.png" width="70">
+    </div>
 
-    <!-- build:js scripts/vendor.js -->
-    <!-- bower:js -->
-    <script src="/bower_components/jquery/dist/jquery.js"></script>
-    <script src="/bower_components/modernizr/modernizr.js"></script>
-    <script src="/bower_components/pixi.js/dist/pixi.min.js"></script>
-    <script src="/bower_components/letteringjs/jquery.lettering.js"></script>
-    <script src="/bower_components/textillate/jquery.textillate.js"></script>
-    <script src="/bower_components/webcomponentsjs/webcomponents.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
+    <div id="draggable-nonvalid" class="ui-widget-content">
+      <img src="images/green_cabbage.png" width="70">
+    </div>
 
-    <!-- build:js scripts/main.js -->
-    <script src="scripts/main.js"></script>
-    <!-- endbuild -->
-  </body>
+    <div id="draggable" class="ui-widget-content">
+      <img src="images/orange_carrot.png" width="70">
+    </div>
+
+    <div id="draggable" class="ui-widget-content">
+      <img src="images/orange_carrot.png" width="70">
+    </div>
+
+    <div id="draggable" class="ui-widget-content">
+      <img src="images/orange_carrot.png" width="70">
+    </div>
+
+    <div id="droppable" class="ui-widget-header">
+      <p>accept: '#draggable'</p>
+    </div>
+
+
+  </div>
+</div>
+<div class="fixed-action-btn">
+ <a class="btn-floating btn-large light-green lighten-1">
+   <i class="fa fa-bars" aria-hidden="true"></i>
+ </a>
+ <ul>
+   <li><a href="#history" class="btn-floating orange lighten-1"><i class="fa fa-archive" aria-hidden="true"></i></a></li>
+   <li><a href="#story" class="btn-floating light-blue lighten-1"><i class="fa fa-book" aria-hidden="true"></i></a></li>
+ </ul>
+</div>
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  <script>
+    (function(b, o, i, l, e, r) {
+      b.GoogleAnalyticsObject = l;
+      b[l] || (b[l] =
+        function() {
+          (b[l].q = b[l].q || []).push(arguments)
+        });
+      b[l].l = +new Date;
+      e = o.createElement(i);
+      r = o.getElementsByTagName(i)[0];
+      e.src = 'https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e, r)
+    }(window, document, 'script', 'ga'));
+    ga('create', 'UA-XXXXX-X');
+    ga('send', 'pageview');
+</script>
+
+  <!-- build:js scripts/vendor.js -->
+  <!-- bower:js -->
+  <script src="/bower_components/jquery/dist/jquery.js"></script>
+  <script src="/bower_components/modernizr/modernizr.js"></script>
+  <script src="/bower_components/pixi.js/dist/pixi.min.js"></script>
+  <script src="/bower_components/letteringjs/jquery.lettering.js"></script>
+  <script src="/bower_components/textillate/jquery.textillate.js"></script>
+  <script src="/bower_components/webcomponentsjs/webcomponents.js"></script>
+  <script src="/bower_components/jquery-ui/jquery-ui.js"></script>
+  <script src="/bower_components/materialize/bin/materialize.js"></script>
+  <script src="/bower_components/typed.js/js/typed.js"></script>
+
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:js scripts/main.js -->
+  <script src="scripts/main.js"></script>
+  <!-- endbuild -->
+</body>
+
 </html>
