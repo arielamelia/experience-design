@@ -29,6 +29,15 @@ body {
 }
 
 
-#draggable, #draggable-nonvalid{
+#draggable, #draggable-nonvalid, #cp{
   display:inline;
+}
+
+#draggable,#draggable-nonvalid{
+  width:300px;
+}
+.typed-fade-out{
+    opacity: 0;
+    animation: 0;
+    transition: opacity .25s;
 }
