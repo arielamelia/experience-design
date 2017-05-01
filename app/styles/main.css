@@ -30,12 +30,13 @@ h1, h2{
   font-family: 'Homemade Apple', cursive;
 }
 #images{
-  width:20%;
+  width:100px;
   float: right;
-  position:fixed;
-  top:50;
-  right:0;
-  margin-right: 20%;
+  margin-right: 30%;
+}
+
+br{
+  margin-bottom: 40px;
 }
 #story1{
   font-family: 'Coming Soon', cursive;
