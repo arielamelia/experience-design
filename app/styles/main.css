@@ -6,8 +6,7 @@
 }
 
 body {
-  background: #fafafa;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Coming Soon", Helvetica, Arial, sans-serif;
   color: #333;
 }
 
@@ -27,7 +26,21 @@ body {
   line-height: 1;
   letter-spacing: -1px;
 }
-
+h1, h2{
+  font-family: 'Homemade Apple', cursive;
+}
+#images{
+  width:20%;
+  float: right;
+  position:fixed;
+  top:50;
+  right:0;
+  margin-right: 20%;
+}
+#story1{
+  font-family: 'Coming Soon', cursive;
+  font-size: 1.3em;
+}
 
 #draggable, #draggable-nonvalid, #cp, #games{
   display:inline;
@@ -40,4 +53,9 @@ body {
     opacity: 0;
     animation: 0;
     transition: opacity .25s;
+}
+
+.story{
+  width: 65%;
+  margin-left: -15%;
 }

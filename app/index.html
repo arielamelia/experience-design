@@ -21,7 +21,7 @@
   <!-- build:css styles/main.css -->
   <link rel="stylesheet" href="styles/main.css">
   <!-- endbuild -->
-
+<link href="https://fonts.googleapis.com/css?family=Coming+Soon|Homemade+Apple" rel="stylesheet">
   <!-- build:js scripts/vendor/modernizr.js -->
   <script src="/bower_components/modernizr/modernizr.js"></script>
   <!-- endbuild -->
@@ -48,15 +48,22 @@
 </div>
 <div id="story" class="section scrollspy">
   <paper-audio-player id="audio" src="audio/PeterRabbit.mp3" title="The Story of Peter Rabbit by Beatrix Potter read by Phil Chenevert" color="#F05C38"></paper-audio-player>
-
-  <div class="container">
+    <div class="container">
+      <div id="images">
+          <image src="images/peter001.jpg" id="first">
+          <image src="images/peter002.jpg" id="second">
+          <image src="images/peter004.jpg" id="third">
+          <image src="images/peter005.jpg" id="fourth">
+          <image src="images/peter006.jpg" id="fifth">
+          <image src="images/peter007.jpg" id="sixth">
+          <image src="images/peter008.jpg" id="seventh">
+      </div>
     <div class="story" id="story1"></div>
-    <div class="story" id="story2"></div>
-    <div class="story" id="story3"></div>
-    <div class="story" id="story4"></div>
-    <div class="story" id="story5"></div>
   </div>
-<div id="games" class="section scrollspy">
+  <div id="card">
+    <image src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Peter-rabbit-albert-06.png">
+  </div>
+<!--<div id="games" class="section scrollspy">
     <div id="draggable-nonvalid" class="ui-widget-content">
       <img src="images/purple_beet.png" width="70">
     </div>
@@ -83,15 +90,14 @@
     <p id="cp">Vegetable clipart <i class="fa fa-copyright" aria-hidden="true"></i><p class="cp">nello</p>
 
   </div>
-</div>
+</div>-->
 <div class="fixed-action-btn">
  <a class="btn-floating btn-large light-green lighten-1">
    <i class="fa fa-bars" aria-hidden="true"></i>
  </a>
  <ul>
-   <li><a href="#history" class="btn-floating orange lighten-1"><i class="fa fa-archive" aria-hidden="true"></i></a></li>
-   <li><a href="#story" class="btn-floating light-blue lighten-1"><i class="fa fa-book" aria-hidden="true"></i></a></li>
-   <li><a href="#games" class="btn-floating purple lighten-3"><i class="fa fa-gamepad" aria-hidden="true"></i></a></li>
+   <li><a id="histscroll" href="#history" class="btn-floating orange lighten-1"><i class="fa fa-archive" aria-hidden="true"></i></a></li>
+   <li><a id="storyscroll" href="#story" class="btn-floating light-blue lighten-1"><i class="fa fa-book" aria-hidden="true"></i></a></li>
  </ul>
 </div>
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
